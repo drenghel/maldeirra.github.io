@@ -1,0 +1,213 @@
+/*hack pour espace dans les titres */
+.espace{
+  padding-right : 7px;
+}
+
+/*hack pour baisser ecart sur les effect des boites (sinon depasse)*/ 
+figure.effect-bubba:hover p{
+	padding-top:0px;
+	margin-top:0px;
+}
+
+
+#alternance, #alternance H2 {
+	background: url(../images/alt.jpg);
+	/*background:black;*/
+	opacity: 0.8;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	padding: 0;
+	color : white;
+}
+
+/*html, body {
+  color: #681;
+	background: #eee;
+	min-width: 700px;
+}*/
+
+/* ---- Timeline ---- */
+
+
+#alternance ol {
+	position: relative;
+	display: block;
+	margin: 100px;
+	height: 4px;
+	background: #9b2;
+}
+
+#alternance  ol::before,
+#alternance  ol::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	display: block;
+	width: 0;
+	height: 0;
+  border-radius: 10px;
+	border: 10px solid #9b2;
+}
+#alternance  ol::before {
+	left: -5px;
+}
+#alternance  ol::after {
+	right: -10px;
+	border: 10px solid transparent;
+	border-right: 0;
+	border-left: 20px solid #9b2;
+  border-radius: 3px;
+}
+
+/* ---- Timeline elements ---- */
+
+#alternance  li {
+	position: relative;
+	top: -77px;
+	display: inline-block;
+	float: left;
+	width: 150px;
+	transform: rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	font: 14px arial;
+
+}
+#alternance  li::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: -29px;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border: 4px solid #9b2;
+	border-radius: 10px;
+	background: #eee;
+}
+
+/* ---- Details ---- */
+
+#alternance  .details {
+	display: none;
+
+	position: absolute;
+	left: -85px;
+	top: 60px;
+	padding: 15px;
+	border-radius: 3px;
+	border-right: 2px solid rgba(0,0,0,.1);
+	border-bottom: 2px solid rgba(0,0,0,.1);
+	transform: rotate(45deg);
+	font: 12px arial;
+	background: #fff;
+}
+#alternance  .details::before {
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: -9px;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #fff;
+	border-top: 0;
+}
+
+/* ---- Hover effects ---- */
+
+#alternance li:hover {
+	cursor: pointer;
+  	color: #28e;
+}
+#alternance li:hover::before {
+	top: 1px;
+	left: -31px;
+	width: 8px;
+	height: 8px;
+	border-width: 5px;
+	border-color: #28e;
+}
+#alternance li:hover .details {
+	display: block;
+  color: #444;
+}
+.modal-bodycenter{
+	text-align: left;
+}
+
+
+.row340{
+	height: 340px;
+}
+
+.col273{ height: 273px;}
+
+.chart140{width: 140px; height: 140px; line-height: 140px;}
+
+
+
+
+#home .btn-glyphicon { padding:8px; background:#ffffff; margin-right:4px; }
+#home .icon-btn { padding: 1px 15px 3px 2px; border-radius:50px;}
+
+.largeText{font-size: large;}
+
+#alternance .pfblock-subtitle{color:white;}
+
+.share_twitter{color: #393434;}
+.share_twitter:before{content: url('../images/icoTweet.png');}
+
+
+.zoomIn h3{color : white;}
+
+@media (max-width: 1200px) {
+	.alternance{
+		display: none;
+	}
+	.alternance-sm{
+		text-align: center;
+		margin: 7em auto -4em auto;
+	}
+	#alternance ul{
+		display: inline-block;
+		margin: 0 auto;
+		text-align: left;
+	}
+	#alternance  li {
+		position: relative;
+		top: -77px;
+		display: block;
+		float: none;
+		width: 100%;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		font: 20px arial;
+		font-style: none;
+		margin: 1.5em 0;
+	}
+	#alternance li:hover::before {
+		content: "";
+		position: absolute;
+		left: -29px;
+		display: block;
+		border: 4px solid #9b2;
+		border-radius: 10px;
+		background: #eee;
+	}
+	#alternance li::before, #alternance li:hover::before{
+		top: 4px;
+		width: 15px;
+		height: 15px;
+	}
+	#alternance li:hover, #alternance li:focus{
+	  	color: #fff;
+	}
+}

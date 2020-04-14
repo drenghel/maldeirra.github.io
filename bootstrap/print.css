@@ -1,0 +1,10 @@
+img, .intro, #preloader, #home {
+
+	display: none;
+}
+
+*{
+
+	background: white;
+	color:black;
+}
