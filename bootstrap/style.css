@@ -383,8 +383,8 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
-	background-color: #00a9e1;
+	background: url(../Images/BatimentTest.png);
+	/*background-color: #00a9e1;*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
