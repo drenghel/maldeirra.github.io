@@ -383,15 +383,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../Images/BatimentTest.png);
-	/*background-color: #00a9e1;*/
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
+	background: linear-gradient(135deg, #00b3d1 45%, #36bdd5 45% 55%, #6dcddd 55% 100%);	/*background-color: #00a9e1;*/
 	padding: 0;
 }
 
